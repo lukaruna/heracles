@@ -18,7 +18,7 @@ Backend was created with express generator. And I did it TDD-style.
 
 ##### Implementation steps for the backend
 - Create the basic express application;
-- Write tests for the backend. For a given input, a given output would be returned. Boundary-value analysis is critical here. I have also added tests for different types, SQL injection, and much more from the big list of naughty strings (Never heard of it before, and I loved it!)
+- Write tests for the backend. For a given input, we have an expected output. Boundary-value analysis is critical here. I have also added tests for different types, SQL injection, and much more from the big list of naughty strings (Never heard of it before, and I loved it!)
 - Write the code until all tests pass;
 - What if the tests are bad? Mutation testing for the win. Run mutation tests (I used stryker), make sure the tests are good too;
 
