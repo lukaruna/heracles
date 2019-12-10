@@ -1,0 +1,52 @@
+{
+  "name": "WebdriverIO-tests",
+  "version": "1.0.1",
+  "description": "Selenium Tests",
+  "main": "test.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.7.0",
+    "app-json-env-gen": "^0.6.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.11.6",
+    "browserstack-local": "^1.3.7",
+    "chai": "^4.1.2",
+    "chromedriver": "^2.46.0",
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-standard": "^1.3.2",
+    "faker": "^4.1.0",
+    "mocha": "^5.1.0",
+    "regenerator-runtime": "^0.12.1",
+    "sinon": "^4.5.0",
+    "uuid": "^3.3.2",
+    "wdio-allure-reporter": "^0.8.3",
+    "wdio-browserstack-reporter": "^0.1.1",
+    "wdio-browserstack-service": "^0.1.18",
+    "wdio-chromedriver-service": "^0.1.3",
+    "wdio-firefox-profile-service": "^0.1.3",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-selenium-standalone-service": "^0.0.10",
+    "webdriverio": "^4.12.0"
+  },
+  "keywords": [
+    "webdriverio",
+    "mocha",
+    "chai",
+    "sinon"
+  ],
+  "scripts": {
+    "help": "./node_modules/.bin/wdio --help",
+    "report": "node ./test/lib/generate-report.js",
+    "test": "wdio test/wdio.conf.js",
+    "env-local": "node ./node_modules/app-json-env-gen/cli.js target=local output=./env.js"
+  },
+  "author": "Lucas de Lima Santana",
+  "license": "ISC"
+}

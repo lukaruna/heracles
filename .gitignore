@@ -1,0 +1,23 @@
+# general
+
+.idea
+
+# backend
+
+./backend/node_modules
+./backend/.idea
+./backend/reports/
+
+# frontend
+
+./frontend/node_modules
+./frontend/src/env.js
+./frontend/logs/
+./frontend/pacts/
+
+# e2e
+
+./e2e/node_modules
+./e2e/env.js
+./e2e/allure
+./e2e/errorShots/

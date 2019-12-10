@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest ./src/tests/unitTests/**.test.js --config=jest.config.js",
+    "eject": "react-scripts eject",
+    "env-local": "node ./node_modules/app-json-env-gen/cli.js target=local output=./src/env.js",
+    "env-pact": "node ./node_modules/app-json-env-gen/cli.js target=pact output=./src/env.js",
+    "test-pact": "jest ./src/tests/contractTests/**.pact.test.js -i --setupFiles=./pactSetup.js --setupTestFrameworkScriptFile=./pactTestWrapper.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.5",
+    "@babel/preset-env": "^7.7.5",
+    "@pact-foundation/pact": "^9.5.0",
+    "@testing-library/react": "^9.3.2",
+    "app-json-env-gen": "^0.6.0",
+    "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3"
+  }
+}

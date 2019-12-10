@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --testPathPattern='./src/tests/functionalTests'",
+    "test-pact": "jest --testPathPattern='src/tests/contractTests' --runInBand",
+    "mutation-test": "stryker run"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "~4.16.1",
+    "express-joi-validation": "^4.0.3",
+    "joi": "^14.3.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.5.0",
+    "@stryker-mutator/core": "^2.4.0",
+    "@stryker-mutator/html-reporter": "^2.4.0",
+    "@stryker-mutator/javascript-mutator": "^2.4.0",
+    "@stryker-mutator/jest-runner": "^2.4.0",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  }
+}

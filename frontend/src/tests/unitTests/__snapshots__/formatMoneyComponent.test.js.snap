@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match snapshot formatMoney component 1`] = `
+<FormatMoneyComponent>
+  <form
+    onSubmit={[Function]}
+  >
+    <div>
+      <h1>
+        Format money
+      </h1>
+    </div>
+    <div>
+      <label
+        htmlFor="numberInput"
+      >
+        Input
+      </label>
+      <input
+        id="numberInput"
+        onChange={[Function]}
+        type="number"
+      />
+      <button
+        type="submit"
+      >
+        Send
+      </button>
+    </div>
+  </form>
+</FormatMoneyComponent>
+`;
