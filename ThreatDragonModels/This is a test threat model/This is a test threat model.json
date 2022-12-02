@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "title": "This is a test threat model",
+    "owner": "",
+    "description": "nice description"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "DATA FLOR DIAGRAM",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "diagramType": "STRIDE",
+        "id": 0
+      }
+    ],
+    "reviewer": ""
+  }
+}
